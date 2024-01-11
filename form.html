@@ -11,9 +11,14 @@
 <form action="">
     <label for="name">
 <span>Name</span>
-<input type="text" id="name" placeholder="Aqui el nombre">
+<input type="text" id="name" name="name" required placeholder="Aqui el nombre" autocomplete="name">
     </label>
 
+    <label for="mail">
+
+        <span>Email</span>
+        <input type="email" name="email" id="email" autocomplete="email" placeholder="Su mail"  required>
+    </label>
 
     <label for="begin-date">
         <span>Fecha de Inicio</span>
@@ -25,11 +30,38 @@
 <input type="time" id="time">
 </label>
 
+<datalist id="cursos">
+    <option value="Java"></option>
+    <option value="JavaScript"></option>
+    <option value="Kotlin"></option>
+    <option value="Python"></option>
+    <option value="GO"></option>
+
+</datalist>
+<input list="cursos">
+
+<input type="submit">
 </form>
 
+<br>
+<br>
 
+<h1>Lo de abajo es bad idea</h1>
+<button>Hola</button>
     <div>
+
+
+        <select name="lenguajes" id="">
+<option value="Java">Java</option>
+<option value="Kotlin">Kotlin</option>
+<option value="Python">Python</option>
+<option value="GO">GO</option>
+
+        </select>
         <input type="text" name="name" id="input_name">
+
+
+
     </div>
 </body>
 

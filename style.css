@@ -38,3 +38,7 @@ p{
 .main-nav__item a :active {
     color: cyan;
 }
+p{ 
+    color: cornflowerblue;
+    font-size: 44px;
+}
